@@ -1,0 +1,73 @@
+/* responsive.css — Additional responsive overrides */
+
+@media (max-width: 480px) {
+  .section {
+    padding: 80px 0;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .timeline-line {
+    left: 20px;
+  }
+
+  .timeline-item {
+    padding-left: 56px;
+  }
+
+  .timeline-dot {
+    left: 10px;
+  }
+
+  .projects-filter {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar-inner {
+    padding: 0 16px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .modal-content {
+    border-radius: var(--radius-md);
+  }
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Touch devices — no hover lag */
+@media (hover: none) {
+  .project-hover-overlay {
+    display: none;
+  }
+
+  .project-card-featured:hover,
+  .project-card:hover {
+    transform: none;
+  }
+}
