@@ -827,7 +827,7 @@
   gap: 80px;
   align-items: start;
 }
-
+/* eifiehie */
 .contact-info-item {
   display: flex;
   align-items: center;
@@ -839,8 +839,22 @@
   transition: border-color var(--transition);
   text-decoration: none;
   color: inherit;
+  min-width: 0; /* Tambahkan ini agar flex child bisa mengecil */
 }
 
+.contact-info-item > div:last-child {
+  min-width: 0;
+  flex: 1; /* Pastikan pembungkus teks fleksibel */
+}
+
+.contact-info-value {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  overflow-wrap: anywhere; /* Tambahkan ini agar email panjang bisa turun baris */
+  word-break: break-word;
+}
+/* eknenfe */
 .contact-info-item:hover {
   border-color: var(--border-accent);
 }
@@ -1222,6 +1236,6 @@
     }
 
     .contact-inner {
-        overflow: visible;
+        overflow: hidden;
     }
 }

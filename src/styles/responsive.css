@@ -71,3 +71,16 @@ html, body {
     transform: none;
   }
 }
+
+
+@media (max-width: 768px) {
+  .reveal-left,
+  .reveal-right {
+    transform: translateY(24px); 
+  }
+
+  .reveal-left.revealed,
+  .reveal-right.revealed {
+    transform: translateY(0);
+  }
+}
