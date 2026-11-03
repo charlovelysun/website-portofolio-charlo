@@ -8,6 +8,7 @@ import About from "./sections/About";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Journey from "./sections/Journey";
+import Certificates from "./sections/Certificates";
 import Contact from "./sections/Contact";
 import "./styles/global.css";
 import "./styles/navbar.css";
@@ -106,6 +107,7 @@ export default function App() {
         <Skills />
         <Projects />
         <Journey />
+        <Certificates />
         <Contact />
       </main>
 

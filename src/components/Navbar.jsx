@@ -10,10 +10,11 @@ const NAV_LINKS = [
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
   { label: "Journey", href: "#journey" },
+  { label: "Awards", href: "#certificates" },
   { label: "Contact", href: "#contact" },
 ];
 
-const SECTION_IDS = ["home", "about", "skills", "projects", "journey", "contact"];
+const SECTION_IDS = ["home", "about", "skills", "projects", "journey", "certificates", "contact"];
 
 export default function Navbar({ theme, toggleTheme }) {
   const [scrolled, setScrolled] = useState(false);
